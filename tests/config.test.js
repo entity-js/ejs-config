@@ -14,14 +14,14 @@
 var path = require('path'),
     fs = require('fs'),
     os = require('os'),
-    test = require('unit.js');
+    test = require('unit.js'),
+    Config = require('../lib');
 
 describe('ejs/config', function () {
 
   'use strict';
 
-  var Config = require('../lib'),
-      tmpPath = path.join(
+  var tmpPath = path.join(
         os.tmpdir(), 'entityjs-tests--config--' + process.pid
       );
 

@@ -6,16 +6,18 @@
     "Config"
   ],
   "author": "Orgun109uk <orgun109uk@gmail.com> (http://my-site.com/)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/entity-js/ejs-config.git"
   },
   "scripts": {
-    "test": "mocha ./tests/"
+    "test": "mocha ./tests/",
+    "eslint": "eslint index.js ./lib ./tests",
+    "jshint": "jshint index.js ./lib ./tests"
   },
   "dependencies": {
     "async": "^1.3.0",
-    "ejs-data": "git://github.com/entity-js/ejs-data.git#0.0.1"
+    "ejs-data": "git://github.com/entity-js/ejs-data.git#0.0.2"
   }
 }
